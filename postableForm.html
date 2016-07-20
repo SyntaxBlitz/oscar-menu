@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+
+<html lang="en">
+	<head>
+		<script src="postScript.js"></script>
+
+		<style>
+			form {
+				display: none;
+			}
+		</style>
+	</head>
+
+	<body>
+		<form action="https://oscar.gatech.edu/pls/bprod/bwckctlg.p_display_courses" method="post">
+			<input type="hidden" name="term_in" value="201608">
+			<input type="hidden" name="call_proc_in" value="bwckctlg.p_disp_dyn_ctlg">
+			<input type="hidden" name="sel_levl" value="dummy">
+			<input type="hidden" name="sel_schd" value="dummy">
+			<input type="hidden" name="sel_coll" value="dummy">
+			<input type="hidden" name="sel_divs" value="dummy">
+			<input type="hidden" name="sel_dept" value="dummy">
+			<input type="hidden" name="sel_attr" value="dummy">
+
+			<select name="sel_subj" multiple>
+			</select>
+			<input type="hidden" name="sel_subj" value="dummy">
+			
+			<input type="text" name="sel_crse_strt">
+			<input type="text" name="sel_crse_end">
+			<input type="text" name="sel_title">
+			
+			<input type="hidden" name="sel_levl" value="%">
+			<input type="hidden" name="sel_schd" value="%">
+			<input type="hidden" name="sel_coll" value="%">
+			<input type="hidden" name="sel_divs" value="%">
+			<input type="hidden" name="sel_dept" value="%">
+			
+			<input type="text" name="sel_from_cred">
+			<input type="text" name="sel_to_cred">
+			
+			<input type="hidden" name="sel_attr" value="%">
+			
+			<input type="submit" value="Get Courses">
+			<input type="reset" value="Reset">
+		</form>
+	</body>
+</html>
