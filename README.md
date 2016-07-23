@@ -1,0 +1,1 @@
+![Context menu demo for a full class identifier](https://i.imgur.com/0lfzr2d.png) ![Context menu demo for a class number](https://i.imgur.com/Zb5MmIL.png)
