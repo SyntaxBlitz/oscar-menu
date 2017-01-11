@@ -1,19 +1,23 @@
 {
   "name": "OSCAR Menu",
   "description": "Adds a context menu to selections with Georgia Tech class numbers",
-  "version": "0.0.1",
-  "permissions": ["contextMenus", "<all_urls>"],
+  "version": "1.1.0",
+  "permissions": ["contextMenus", "<all_urls>", "storage"],
   "background": {
   	"scripts": ["menus.js"]
   },
   "content_scripts": [
   	{
   	  "matches": ["<all_urls>"],
-  	  "js": ["selection.js"]
+  	  "js": ["selection.js", "options.js"]
   	}
   ],
   "icons": {
     "128": "oscar-menu.png"
   },
-  "manifest_version": 2
+  "manifest_version": 2,
+  "options_ui": {
+    "page": "options.html",
+    "chrome_style": true
+  }
 }
